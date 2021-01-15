@@ -67,7 +67,7 @@ test("return the middle character of `inputValue`", () => {
 
 
     // When
-    let actual = strangerStrings.getMiddleCharacter(input);
+    let actual = strangerStrings.getMiddleCharacter(inputValue);
     //Then
     expect(actual).toEqual(expected);
 });
@@ -106,6 +106,20 @@ test("return the reverse of input", () => {
     let inputValue = 'WutangClan';
 
     let expected = "nalCgnatuW";
+
+
+    // When
+    let actual = strangerStrings.reverse(inputValue);
+    //Then
+    expect(actual).toEqual(expected);
+});
+
+test("return s'tahw pu rylaT", () => {
+    // Given
+    let strangerStrings = new StrangerStrings();
+    let inputValue = "What's up Talyr";
+
+    let expected = "s'tahW pu rylaT";
 
 
     // When

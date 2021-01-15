@@ -1,36 +1,50 @@
 class StrangerStrings {
 
     getHelloWorld(){
-        return null;
+        return "Hello World";
     }
 
     concatenation(firstSegment, secondSegment){
-        return null;
+        return firstSegment + secondSegment;
     }
 
     getPrefix(input){
-        return null;
+        return input.substring(0, 3);
     }
 
     getSuffix(input){
-        return null;
+        return input.substring(3, 6);
     }
 
     getMiddleCharacter(input){
-        return null;
+        
+        var mid = Math.floor(input.length / 2);
+        return input[mid];
+
     }
 
     getFirstWord(input){
-        return null;
+        return input.split(" ")[0];
     }
     
     getSecondWord(spaceDelimnatedInput){
-        return null;
+        return spaceDelimnatedInput.split(" ")[1];
     }
     
+    // reverse(input){
+    //     return input.split("").reverse().join("");
+    // }
+
     reverse(input){
-        return null;
-    }
+        return input.split("").reverse().join("").split(" ").reverse().join(" ");
+      }
+
+
+
+    // What's up Talyr
+    //s'tahw pu rylaT
+
+
 }
 
 module.exports = StrangerStrings;
